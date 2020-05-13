@@ -19,17 +19,17 @@ http.get('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
   .catch(err => console.log(err))
 
-// Get User
+// Get Single User
   http.get('https://jsonplaceholder.typicode.com/users/1')
   .then(data => console.log(data))
   .catch(err => console.log(err))
 
 // Create User
-http.user('https://jsonplaceholder.typicode.com/users', dataToCreateUser)
+http.post('https://jsonplaceholder.typicode.com/users', dataToCreateUser)
   .then(data => console.log(data))
   .catch(err => console.log(err))
 
-// Update Post
+// Update User
 http.put('https://jsonplaceholder.typicode.com/users/2', dataToUpdateUser)
   .then(data => console.log(data))
   .catch(err => console.log(err))
