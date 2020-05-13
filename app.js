@@ -25,7 +25,7 @@ http.get('https://jsonplaceholder.typicode.com/users')
   .catch(err => console.log(err))
 
 // Create User
-http.post('https://jsonplaceholder.typicode.com/users', dataToCreateUser)
+http.user('https://jsonplaceholder.typicode.com/users', dataToCreateUser)
   .then(data => console.log(data))
   .catch(err => console.log(err))
 
